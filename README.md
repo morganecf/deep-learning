@@ -26,7 +26,7 @@ Overall it seems to be developing towards a proto-Celtic-Satanic aesthetic.
 The data prep code can be found in `sigilizer/`. The DCGAN code was slightly modified to run on FloydHub and can be found in the following places: 
 
 * Command to execute training job: https://www.floydhub.com/morganeciot/projects/sigilizer
-* Repository where code & data are found: https://www.floydhub.com/morganeciot/datasets/sigilizer  
+* Repository where code & data are found: https://www.floydhub.com/morganeciot/datasets/sigils  
 
 **NOTE** that the FloydHub sigilizer repository modifies the original GAN code to work with floyd's input/output handling.  
 
@@ -79,20 +79,22 @@ RuntimeError: Click will abort further execution because Python 3 was
   mitigation steps.
  ```
  
-Initialize the project:  
+Initialize the project (inside `floyd-sigilizer/`):  
  
 ```
-cd sigilizer/
+cd src/
+
+# project will be called "sigilizer"
 floyd init sigilizer
 ```  
 
 Initialize and upload the dataset:  
 
 ```
-cd DCGAN-tensorflow-sigilizer/
+cd data/
 
-# dataset will be called "sigilizer"
-floyd data init sigilizer
+# dataset will be called "sigils"
+floyd data init sigils
 
 # upload data (version 1)
 floy data upload
@@ -103,7 +105,7 @@ Run the project:
 ```
 cd sigilizer/
 
-floyd run --gpu --env tensorflow-0.12 --data morganeciot/datasets/sigilizer/1:input "bash run_sigilizer_on_floyd.sh"
+floyd run --gpu --env tensorflow-0.12 --data morganeciot/datasets/sigils/1:input "bash run_sigilizer_on_floyd.sh"
 ```  
 
 The default env is TF but I'm making sure it's using the (old) version the DCGAN code requires. You can view all supported environments [here](https://docs.floydhub.com/guides/environments/). The `--data` option allows me to specify an uploaded dataset to use with the project. `1` means I'm using version 1 of that dataset. `input` is the root input directory, or the mount point that links the data to the code. In quotes is the command I'm running. The bash script that I'm ultimately running looks like:  
@@ -116,7 +118,9 @@ python main.py \
   --sample_dir /output/samples \
   --train \
   --crop
-```
+```  
+
+The GAN code creates `/output/logs`, `/output/checkpoint`, `/output/logs`, and `/output/samples` at runtime.  
 
 ### Caveats & notes
 * Use a `.floydignore` file in your project to ignore files. Datasets don't yet support this, though, so you can't ignore files in your uploaded datasets.
