@@ -21,7 +21,7 @@ I trained for 2 days on my CPU, which was probably unnecessary as results seem t
 ![final_test2](https://user-images.githubusercontent.com/4405597/34166930-46400aac-e4ae-11e7-8ef8-3da31b8bfe66.png)
 ![final_test3](https://user-images.githubusercontent.com/4405597/34166931-46543c8e-e4ae-11e7-9a55-d5e076c66c03.png) 
 
-Overall it seems to be developing a proto-Celtic-Satanic taste.  
+Overall it seems to be developing towards a proto-Celtic-Satanic aesthetic.  
 
 ## Using FloydHub
 
