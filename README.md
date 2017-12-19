@@ -11,7 +11,7 @@ The DCGAN code should take an input uniform distribution between -1 and 1 to gen
 
 The DCGAN code is carpedm20's and can be found [here](https://github.com/carpedm20/DCGAN-tensorflow).  
 
-Here are some of the results after training for 1 day on a CPU:  
+Here are some of the results after training for 1 day on a CPU (looking ultrasound-y):  
 
 ![train_92_0006](https://user-images.githubusercontent.com/4405597/34166934-468425b6-e4ae-11e7-9078-1c5bf43737ec.png)
 
