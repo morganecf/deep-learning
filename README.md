@@ -139,4 +139,8 @@ The GAN code creates `/output/logs`, `/output/checkpoint`, `/output/logs`, and `
 ### Caveats & notes
 * Use a `.floydignore` file in your project to ignore files. Datasets don't yet support this, though, so you can't ignore files in your uploaded datasets.
 * Floyd envs come preinstalled with numpy, scipy, and a bunch of useful libraries, but you can [install extra dependencies](https://docs.floydhub.com/guides/jobs/installing_dependencies/) pretty easily
-* Don't put data or anything large in your code. FloydHub uploads your code, then downloads and initializes the env each time you run a command, so there's significant overhead to using `run`. 
+* Don't put data or anything large in your code. FloydHub uploads your code, then downloads and initializes the env each time you run a command, so there's significant overhead to using `run`.  
+
+### Sigilizer results on GPU
+* [Test samples from 25 epochs](https://www.floydhub.com/morganeciot/projects/sigilizer/3/output/samples): 453.5101 seconds to train, d_loss: 1.68391764, g_loss: 1.06849706  
+* Test samples from 1000 epochs: 
