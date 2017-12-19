@@ -23,6 +23,11 @@ Results after 2 days of training (results seemed to visually converge after 1.5 
 
 Overall it seems to be developing towards a proto-Celtic-Satanic aesthetic.  
 
+The data prep code can be found in `sigilizer/`. The DCGAN code was slightly modified to run on FloydHub and can be found in the following places: 
+
+* Command to execute training job: https://www.floydhub.com/morganeciot/projects/sigilizer
+* Repository where code & data are found: https://www.floydhub.com/morganeciot/datasets/sigilizer 
+
 ## Using FloydHub
 
 
