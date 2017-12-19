@@ -1,7 +1,7 @@
 # Deep Learning Notes & Projects
 
 ## Sigilizer
-Trains GAN on symbols obtained from symboldictionary.net to generate novel sigils. Over 2k symbols were downloaded from the website, and ~1.7k were used for training. I manually removed some that didn't fit my personal subjective sigil criteria. The sigils were converted to grayscale. Not doing so amplifies the importance of residual color found in some of the images, resulting in test images like:  
+Trains GAN on symbols obtained from `symboldictionary.net` to generate novel sigils. Over 2k symbols were downloaded from the website, and ~1.7k were used for training. I manually removed some that didn't fit my personal subjective sigil criteria. The sigils were converted to grayscale. Not doing so amplifies the importance of residual color found in some of the images, resulting in test images like:  
 
 ![test_arange_83](https://user-images.githubusercontent.com/4405597/34166933-467493a8-e4ae-11e7-9306-ae0137b79f4b.png)  
 
@@ -26,7 +26,9 @@ Overall it seems to be developing towards a proto-Celtic-Satanic aesthetic.
 The data prep code can be found in `sigilizer/`. The DCGAN code was slightly modified to run on FloydHub and can be found in the following places: 
 
 * Command to execute training job: https://www.floydhub.com/morganeciot/projects/sigilizer
-* Repository where code & data are found: https://www.floydhub.com/morganeciot/datasets/sigilizer 
+* Repository where code & data are found: https://www.floydhub.com/morganeciot/datasets/sigilizer  
+
+**NOTE** that the FloydHub sigilizer repository modifies the original GAN code to work with floyd's input/output handling.  
 
 ## Using FloydHub
 [FloydHub](https://www.floydhub.com/) is a bit of toy alternative to AWS for running deep learning projects. I'm using it for personal projects but wouldn't recommend it for anything larger (for example, you can't even ssh into the cluster your project is running on). But it circumvents having to setup your own deep learning environment and allows you to compute on their GPU clusters, meaning I can reduce my train time from hours/days to mere minutes.  
