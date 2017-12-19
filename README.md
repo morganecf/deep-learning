@@ -100,6 +100,20 @@ floyd data init sigils
 floy data upload
 ```  
 
+The remote "filesystem" will now look like:  
+
+```
+- morganeciot/projects/sigilizer
+--- main.py
+--- model.py
+--- ops.py
+--- utils.py
+--- run_sigilizer_on_floyd.sh
+
+- morganeciot/datasets/sigils
+--- sigils/
+```  
+
 Run the project:  
 
 ```
@@ -112,7 +126,7 @@ The default env is TF but I'm making sure it's using the (old) version the DCGAN
 
 ```
 python main.py \
-  --dataset /input/data/sigils \
+  --dataset /input/sigils \
   --logs_dir /output/logs \
   --checkpoint_dir /output/checkpoint \
   --sample_dir /output/samples \
