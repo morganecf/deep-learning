@@ -64,10 +64,10 @@ Navigate to your project repository. My directory structure looks like:
 
 I'm using python3 and had to add the following to my `.bashrc`:
 ```
-	export LC_ALL=en_US.UTF-8
-	export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
 ```
-This avoids the following error:  
+This avoids the following error (more information [here](http://click.pocoo.org/5/python3/):  
 ```
 Traceback (most recent call last):
   ...
@@ -76,7 +76,6 @@ RuntimeError: Click will abort further execution because Python 3 was
   to Python 2 or consult http://click.pocoo.org/python3/ for
   mitigation steps.
  ```
-See more information [here](http://click.pocoo.org/5/python3/).  
  
 Initialize the project:  
  
