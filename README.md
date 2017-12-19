@@ -69,7 +69,7 @@ I'm using python3 and had to add the following to my `.bashrc`:
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 ```
-This avoids the following error (more information [here](http://click.pocoo.org/5/python3/):  
+This avoids the following error (more information [here](http://click.pocoo.org/5/python3/)): 
 ```
 Traceback (most recent call last):
   ...
@@ -79,7 +79,7 @@ RuntimeError: Click will abort further execution because Python 3 was
   mitigation steps.
  ```
  
-Initialize the project (inside `floyd-sigilizer/`):  
+Initialize the project:  
  
 ```
 cd src/
