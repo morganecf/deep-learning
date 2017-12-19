@@ -15,7 +15,7 @@ Here are some of the results after training for 1 day on a CPU:
 
 ![train_92_0006](https://user-images.githubusercontent.com/4405597/34166934-468425b6-e4ae-11e7-9078-1c5bf43737ec.png)
 
-I trained for 2 days on my CPU, which was probably unnecessary as results seem to visually converge after 1 day (though the discriminator and generator losses sort of continued to fluctuate):  
+Results after 2 days of training (results seemed to visually converge after 1.5 days of training, though discriminator and generator losses continued to fluctuate):  
 
 ![final_test1](https://user-images.githubusercontent.com/4405597/34166929-46334f1a-e4ae-11e7-82b4-ea6e3b61f54a.png)
 ![final_test2](https://user-images.githubusercontent.com/4405597/34166930-46400aac-e4ae-11e7-8ef8-3da31b8bfe66.png)
