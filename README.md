@@ -50,18 +50,18 @@ pip install -U floyd-cli
 floyd login
 ```  
 
-Navigate to your project repository. My directory structure looks like:  
+Navigate to your project repository. My local directory structure looks like:  
 
 ```
-- DCGAN-tensorflow-sigilizer/
--- data/
---- sigils/
--- main.py
--- model.py
--- ops.py
--- utils.py
-- sigilizer
--- run_sigilizer_on_floyd.sh
+- floyd-sigilizer/
+--- data/
+----- sigils/
+--- src/
+----- main.py
+----- model.py
+----- ops.py
+----- utils.py
+----- run_sigilizer_on_floyd.sh
 ```  
 
 I'm using python3 and had to add the following to my `.bashrc`:
