@@ -143,4 +143,4 @@ The GAN code creates `/output/logs`, `/output/checkpoint`, `/output/logs`, and `
 
 ### Sigilizer results on GPU
 * [Test samples from 25 epochs](https://www.floydhub.com/morganeciot/projects/sigilizer/3/output/samples): 453.5101 seconds to train, d_loss: 1.68391764, g_loss: 1.06849706  
-* Test samples from 1000 epochs: 
+* [Test samples from 1000 epochs](https://www.floydhub.com/morganeciot/projects/sigilizer/4/output/samples): idk why they are looking so bad (5h of training) 
