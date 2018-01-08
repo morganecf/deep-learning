@@ -5,9 +5,11 @@
 2. [Analyze stories and generate new ones](https://github.com/morganecf/deep-learning/tree/master/stories)
 3. [Pix2Pix](https://www.floydhub.com/morganeciot/projects/pix2pix) on FloydHub using [cityscapes data](https://www.floydhub.com/morganeciot/datasets/cityscapes), anime data, .... This uses a TensorFlow port of pix2pix found [here](https://github.com/affinelayer/pix2pix-tensorflow). The commands to use the person2anime model:
 ```
-# Train
+# Train cityscapes model
+floyd run --gpu --env tensorflow-1.4 --data morganeciot/datasets/cityscapes/1:input "bash train_cityscapes.sh"
+# Train anime model
 floyd run --gpu --env tensorflow-1.4 --data morganeciot/datasets/person2anime/1:input "bash train_person2anime.sh"
-# Test
+# Test anime model
 floyd run --gpu --env tensorflow-1.4 --data morganeciot/datasets/person2anime/1:input "bash test_person2anime.sh"
 ```
 
