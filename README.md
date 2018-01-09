@@ -20,7 +20,7 @@ floyd run --gpu \
 # Test cityscapes model
 floyd run --gpu \
   --env tensorflow-1.4 \
-  --data morganeciot/datasets/cityscapes/1:input \
+  --data morganeciot/datasets/cityscapes/3:input \
   "bash test_cityscapes.sh"
 
 # TODO: change pix2pix code to take training arg that will output checkpoint paths to a given dir. Then can directly
