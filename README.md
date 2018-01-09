@@ -12,6 +12,7 @@ floyd run --gpu \
   "bash train_cityscapes.sh"
 
 # Create new dataset from output (ex: morganeciot/projects/pix2pix/5/output --> morganeciot/datasets/cityscapes/2)
+# Need to make sure path references in cityscapes_train/checkpoint point to checkpoint. They will automatically point to /output/ since that was the path in the job. 
 
 # Test cityscapes model using 2 mount points:
 floyd run --gpu \
