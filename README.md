@@ -5,9 +5,6 @@
 2. [Analyze stories and generate new ones](https://github.com/morganecf/deep-learning/tree/master/stories)
 3. [Pix2Pix](https://www.floydhub.com/morganeciot/projects/pix2pix) on FloydHub using [cityscapes data](https://www.floydhub.com/morganeciot/datasets/cityscapes), anime data, .... This uses a TensorFlow port of pix2pix found [here](https://github.com/affinelayer/pix2pix-tensorflow). 
 ```
-# Run this each time there's a code change
-floyd init pix2pix 
-
 # Train cityscapes model
 floyd run --gpu \
   --env tensorflow-1.4 \
